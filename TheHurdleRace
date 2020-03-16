@@ -1,20 +1,25 @@
-class Solution {
+class Solution
+{
 
     // Complete the hurdleRace function below.
-    static int hurdleRace(int k, int[] height) {
-        int len= height.Count();
-        int max=0;
-        int count=0;
-        for(int i=0; i<len;i++){
-          if(height[i]>k && height[i]>max){
-                max=height[i];
-                count=max-k;
+    static int hurdleRace(int k, int[] height)
+    {
+        int len = height.Count();
+        int max = 0;
+        int count = 0;
+        for (int i = 0; i < len; i++)
+        {
+            if (height[i] > k && height[i] > max)
+            {
+                max = height[i];
+                count = max - k;
             }
-    }
-    return count;
+        }
+        return count;
     }
 
-    static void Main(string[] args) {
+    static void Main(string[] args)
+    {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
         string[] nk = Console.ReadLine().Split(' ');
