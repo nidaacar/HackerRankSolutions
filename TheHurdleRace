@@ -1,6 +1,6 @@
 class Solution {
 
-    // Complete the hurdleRace function below.
+   
     static int hurdleRace(int k, int[] height) {
         int len= height.Count();
         int max=0;
